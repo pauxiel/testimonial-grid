@@ -1,0 +1,36 @@
+// Media query for mobile first layout
+@mixin small-breakpoint {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+
+
+
+
+
+@mixin extra-large-breakpoint {
+  @media (min-width: #{$desktop})  {
+    @content;
+  }
+
+}
+
+
+
+// @mixin respond($breakpoint) {
+        
+//   @if $breakpoint == small-breakpoint {
+//     @media only screen and (max-width: #{$mobile}) { @content };    //600px
+// }
+
+
+// @if $breakpoint == extra-large-breakpoint {
+//   @media only screen and (max-width: #{$large-desktop}) { @content };    //1800
+// }
+
+
+
+// }
+
